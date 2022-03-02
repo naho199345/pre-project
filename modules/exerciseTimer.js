@@ -2,12 +2,16 @@ const mongoose = require("mongoose");
 
 const timerSchema = mongoose.Schema({
     purpose: {
-        type: Number,
+        type: String,
         required: true,
     },
     exerciseTime: {
-        type: String,
+        type: Number,
         required: true,
+    },
+    time: {
+        type: Date,
+        default: Date.now
     },
 })
 
