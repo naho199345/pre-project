@@ -6,6 +6,8 @@ const cors = require("cors");
 
 connect();
 
+const open = Date.now() + 30*60*1000;
+console.log(Date.now())
 // const TimerRouter = require("./routes/timer");
 
 
